@@ -1,4 +1,12 @@
+//Last thing i was trying to do
+//was creating all possible combinations of the code.
+//I was trying to do that with nested loop that would
+//save all possible combinations in the array.
+//I didnt have time to make it work so i commented everything out.
+
+
 const code = [4, 4, 3, 1];
+//const guesses = allPossibleGuesses();
 
 function init() {
     for (x = 0; x < 12; x++) {
@@ -14,7 +22,7 @@ function init() {
         alert("Numbers in right possition: " + hints[0] + ". Guessed numbers: " + hints[1]);
         console.log(code, userInput, hints[0], hints[1]);
     };
-
+    console.log(guesses);
 };
 function analyseInput(userInput, code) {
     let hint1 = 0;
@@ -36,5 +44,17 @@ function getInput() {
     let input = prompt("Guess the numbers");
     return (input);
 };
+//function allPossibleGuesses() {
+//    let possibleGuesses = Array();
+//   for (i = 0; i < 1296; i++) {
+//       let possibleGuesses[i] = Array();
+//       for (j = 0; j < 4; j++) {
+//           for (x = 1; x < 7; x++) {
+//               possibleGuesses[i][j] = x;
+//          }
+//      }
+//  }
+//  return (possibleGuesses);
+//}
 
 init();
